@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>حقيقي ولا أي كلام | عالم رقمي آمن</title>
+    <link rel="shortcut icon" href="Images/Logo/Shortcut-icon.png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Source Sans Pro" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/13241355a7.js" crossorigin="anonymous"></script>
+      <script src="Quizcheck.js"></script>
+      <style>
+        
+            
+  
+      body {
+          font-family: 'Source Sans Pro';font-size: 22px;
+      }
+  
+      #navbar{
+        background-color: #00a1e4;
+        height: auto;
+      
+  
+      }
+  
+      #Logo{
+        width: 180px;
+        height: auto;
+        
+      }
+
+      .column {
+      display: flex;
+      margin: 30px;
+      }
+
+    input[type="checkbox"] {
+      margin-left: 5px;
+    }
+
+    .alert-title {
+  color: red;
+}
+
+.alert-text {
+  color: red;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+      /* @media (max-width:700px){ */
+      /* } */
+      </style>
+  
+  </head>
+  <body>
+    <nav class="navbar navbar-default" id="navbar">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button style="top: 15px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><i class="fas fa-house"></i></i></a>
+        </div>
+        <br>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div style="margin: 22;" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul style=" float: right; font-weight: bold;" class="nav navbar-nav">
+           
+            <li><a href="index.html"><p id="navtext" style="text-align: right;">الصفحة الرئيسية</p></a></li>
+            <li><a href="المواطن الرقمي.html"><p style="text-align: right;" id="navtext">المواطن الرقمي</p></a></li>
+            <li><a href="التنمر الإلكتروني.html"><p style="text-align: right;" id="navtext">التنمر الإلكتروني</p></a></li>
+            <li><a href="حقيقي ولا أي كلام.html"><p style="text-align: right;" id="navtext">حقيقي ولا أي كلام</p></a></li>
+            <li><a href="مساعدة.html"><p style="text-align: right;" id="navtext">مساعدة</p></a></li>
+            <li><a href="من نحن.html"><p style="text-align: right;" id="navtext">من نحن</p></a></li>
+            </ul>
+          
+    </div></div></nav>
+    <center>
+      <div id="quiz" style="align-items: center; margin-left: 60px;">
+      <img id="Crd1" class="" style="width: 50%;" src="assets/cards/Cardspfs-4.jpg" alt="Crd1">  
+      <br>
+      <br>
+      
+      <div class="column"><input id="answer1" style="width: 25px; height: 25px;" type="checkbox">&nbsp;  </input> <p>إي كلام</p></div>
+      
+      <div class="column"><input id="answer2" style="width: 25px; height: 25px;" type="checkbox">&nbsp;  </input> <p>حقيقي</p> </div>
+      
+      <br>
+      <audio id="Rightsound"> 
+        <source src="assets/Audio/videoplayback.mp3"> 
+       </audio>
+      
+      <a href="Question3.html"><button  style="font-size: 22px;" class="btn btn-primary"> السابق</button></a>
+      <button    onclick="submitAnswers()"  style="font-size: 22px;" class="btn btn-primary" type="submit">تأكيد</button>
+      <a href="Question5.html"><button disabled="true"  id="Nextbutton" style="font-size: 22px;" class="btn btn-primary"> التالي</button></a>
+      
+      </div></div>
+
+
+
+      
+        
+        
+        
+
+      
+  </center>
+  <br><br><br><br><br>
+  
+  <style>
+  
+  #yesbutton{
+        display: inline-block;
+        background-color: blue;
+        padding: 20px;
+        width: 200px;
+        color: #ffffff;
+        text-align: center;
+
+  }
+  
+  
+  #navtext{
+    color: white;
+  }
+  
+  #navtext:hover{
+    color: aqua;
+  }
+  
+  #footer{
+            
+            bottom: 0;
+            width: 100%;
+    
+            
+             background-color: #00a1e4;
+            font-family: 'Varela Round';font-size: 13px;
+            color: lightblue;
+            
+          }
+          
+  
+  
+          #social-media{
+            width: 13px;
+            height: 20px;
+            border: 0px solid #07204c;
+             text-decoration: none;
+             pointer-events: none;
+          }
+  
+          #social-media2{
+            width: 20px;
+            height: 20px;
+            border: 0px solid #07204c;
+            text-decoration: none;
+            pointer-events: none;
+          }
+  
+          #social-media3{
+            width: 27px;
+            
+            border: 0px solid #07204c;
+            text-decoration: none;
+            pointer-events: none;
+  
+          }
+  
+      a:link {
+      color: lightblue;
+      background-color: transparent;
+      text-decoration: none;
+      }
+  
+         </style>
+        
+        <!-- Footer -->
+        <footer style="font-family: 'Source Sans Pro' ;font-size: 15px;" id="footer" class="bg-dark text-center text-white">
+              
+          <div>
+          
+          </div>
+          <!-- Copyright -->
+          <div class="text-center p-3">
+            <br>
+  
+            
+  
+            <div class="footerlogodiv">
+              <style>
+                #footerlogo{
+                  width: 300px;
+                }
+                #footerlogolink
+                {
+                  text-decoration: none;
+                }
+                footer{
+                font-family: 'Source Sans Pro' ;font-size: 24px;
+              }
+              </style>
+              <a href="index.html" id="footerlogolink"> <i class="fas fa-house"></i> </a>
+              
+              
+            <br>
+            <!-- <h4></h4><br> -->
+            <br>
+            
+          </div>
+              <br>
+  
+  
+            
+              </a>
+              <center>
+            <div>
+              <br>
+            <script>
+              
+            </script>
+            <p  id="idid" style="text-align: left;">&nbsp; </p>
+           </div>
+          </center>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+  
+  
+        <style>
+  
+  a:link {
+    color: lightblue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  #footerlinks{
+    font-size: 17px;
+    
+  }
+  
+        </style>
+  
+  </body></html>
